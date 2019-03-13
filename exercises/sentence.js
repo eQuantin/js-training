@@ -6,6 +6,13 @@
  *
  */
 
+// Your code :
+
+function sentence(arr) {
+    let str;
+    str = arr.join(' ');
+    return str;
+}
 
 //* Begin of tests
 const assert = require('assert')

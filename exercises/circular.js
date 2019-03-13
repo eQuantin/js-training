@@ -8,6 +8,10 @@
  */
 
 // Your code :
+let circular = {
+    circular: 1
+};
+circular.circular = circular;
 
 //* Begin of tests
 const assert = require('assert')

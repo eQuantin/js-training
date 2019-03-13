@@ -10,8 +10,30 @@
  * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
 
+// Your code :
+
+function cutFirst(str) {
+    str = str.slice(2);
+    return (str);
+}
+
+function cutLast(str) {
+    str = str.slice(0, (str.length - 2));
+    return (str);
+}
+
+function cutFirstLast(str) {
+    str = cutFirst(str);
+    str = cutLast(str);
+    return (str);
+}
+
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(cutFirst('foobar'), 'obar');
+assert.strictEqual(cutLast('foobar'), 'foob');
+assert.strictEqual(cutFirstLast('foobar'), 'ob');
+
+// assert.fail('You must write your own tests')
 // End of tests */

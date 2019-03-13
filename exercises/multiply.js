@@ -10,6 +10,22 @@
 
 // Your code :
 
+function multiply(a, b) {
+    let total = 0;
+    if (!a || !b) {
+        return 0;
+    }
+    while (b > 0) {
+        total += a;
+        b--;
+    }
+    while (b < 0) {
+        total -= a;
+        b++;
+    }
+    return total;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

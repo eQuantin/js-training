@@ -7,10 +7,19 @@
  *
  */
 
+// Your code :
+
+function capitalize(str) {
+    let str2;
+    str2 = str.charAt(0).toUpperCase();
+    for (let i = 1; i < str.length; i++) {
+        str2 = str2 + str.charAt(i).toLowerCase();
+    }
+    return (str2);
+}
 
 //* Begin of tests
 const assert = require('assert')
-
 assert.strictEqual(typeof capitalize, "function")
 assert.strictEqual(capitalize('str'), 'Str')
 assert.strictEqual(capitalize('qsdqsdqsd'), 'Qsdqsdqsd')
